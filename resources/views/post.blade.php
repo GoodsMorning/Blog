@@ -21,7 +21,7 @@ down > top --}}
             {{ $post->title }}
         </h1>
         <p>
-            by <a href="#">Krit</a> in <a href="/category/{{$post->category->slug}}">{{$post->category->name}}</a>
+            by <a href="/author/{{$post->author->username}}">{{$post->author->name}}</a> in <a href="/category/{{$post->category->slug}}">{{$post->category->name}}</a>
         </p>
         <div>
             {!! $post->body !!}
